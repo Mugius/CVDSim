@@ -1,0 +1,27 @@
+{
+  "name": "colorblind-simulator",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "pawjs --no-cache --env=development start",
+    "build": "pawjs --no-cache --env-config-path=./.prod.env --env=production build",
+    "lint": "pawjs lint",
+    "test": "pawjs --no-cache test"
+  },
+  "author": {
+    "name": "Adam Nuridov",
+    "email": "s331046@oslomet.no"
+  },
+  "dependencies": {
+    "@pawjs/pawjs": "^3.0.0-beta.2",
+    "@pawjs/sass": "^2.2.4",
+    "@pawjs/srcset": "^2.1.4",
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
+    "eslint-import-resolver-webpack": "^0.12.0",
+    "universal-fetch": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^3.6.0"
+  }
+}

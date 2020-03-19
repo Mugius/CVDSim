@@ -1,0 +1,68 @@
+video {
+    position: fixed;
+    background-position: center;
+    width: 100vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+	margin: 0;
+}
+body, html, div {
+    overflow: hidden;
+}
+.flip {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .flip {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100px;
+      height: 50px;
+      display: block;
+      z-index: 2;
+    }
+  }
+
+button {
+    height: 50px;
+    width: 24%;
+    border: 2px solid black;
+    background: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+.active {
+    background: black;
+    color: white;
+}
+.buttonContainer {
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.protanopia {
+    filter: url('rgblind.svg#protanopia');
+    -webkit-filter: url('rgblind.svg#protanopia');
+    color-interpolation-filters:sRGB;	
+}
+
+.deuteranopia {
+    filter: url('rgblind.svg#deutexranopia');
+    -webkit-filter: url('rgblind.svg#deuteranopia');
+    color-interpolation-filters:sRGB;	
+}
+.tritanopia {
+    filter: url('rgblind.svg#tritanopia');
+    -webkit-filter: url('rgblind.svg#tritanopia');
+    color-interpolation-filters:sRGB;	
+}
